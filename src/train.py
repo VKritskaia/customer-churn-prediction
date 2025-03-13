@@ -1,13 +1,13 @@
 import pandas as pd
 import pickle
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split # type: ignore
+from sklearn.ensemble import RandomForestClassifier # type: ignore
+from sklearn.metrics import classification_report # type: ignore
 
 from preprocess import preprocess_data
 
 # Load dataset
-df = pd.read_csv("../data/raw/customer_churn.csv")
+df = pd.read_csv("../data/raw/Telco-Customer-Churn.csv")
 df = preprocess_data(df)
 
 # Split data
